@@ -1,0 +1,55 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// indexページのfvセクション
+.p-index-fv {
+  position: relative;
+  &__kv-wrapper {
+    // Retinaディスプレイ用
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(/img/sp/wedding_sp@2x.jpg);
+    }
+    background-image: url(/img/sp/wedding_sp.jpg);
+    background-size: cover;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__content {
+    position: absolute;
+    color: import.$color-white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  &__text {
+    font-size: 2.4rem;
+    font-family: 'Libre Baskerville';
+    transform: translateX(2px);
+    letter-spacing: 0.2em;
+  }
+}
+
+@include m.mq(tab) {
+  // indexページのfvセクション
+.p-index-fv {
+  &__kv-wrapper {
+    // Retinaディスプレイ用
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(/img/pc/wedding_pc@2x.jpg);
+    }
+    background-image: url(/img/pc/wedding_pc.jpg);
+    height: 1024px;
+  }
+  &__text {
+    font-size: 4.0rem;
+  }
+}
+}

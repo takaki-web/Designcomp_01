@@ -1,0 +1,52 @@
+@use "../foundation/import";
+@use "../mixin" as m;
+
+// indexページのfooterセクション
+.l-index-footer {
+  height: 194px;
+  width: 100%;
+  .l-index-footer__site-title {
+    padding: 49px 0 34px 0;
+    color: import.$color-accent;
+    text-align: center;
+    span{
+      letter-spacing: 0.2em;
+      font-size: 1.2rem;
+      display: block;
+    }
+  }
+
+  .l-index-footer__address {
+    margin: 0 auto;
+    width: 92%;
+    font-family: "Yu Mincho";
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    line-height: 18px;
+    span{
+      letter-spacing: 0em;
+      display: block;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+@include m.mq(tab) {
+  // indexページのfooterセクション
+.l-index-footer {
+  .l-index-footer__content{
+    display: flex;
+    padding: 77px 0 0 150px;
+  }
+  .l-index-footer__site-title {
+    padding: 0;
+    width: 208px;
+    line-height: 16px;
+  }
+
+  .l-index-footer__address{
+    margin-left: 35px;
+  }
+}
+}

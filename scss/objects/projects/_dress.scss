@@ -1,0 +1,105 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// indexページのdressセクション
+.p-index-dress {
+  background-color: import.$color-white;
+  &__img-wrapper {
+    margin: 0 calc(50% - 50vw);
+    img {
+      width: 100%;
+    }
+    padding: 40px 0 40px 0;
+    position: relative;
+  }
+  &__content {
+    background-color: import.$color-dress;
+    color: import.$color-white;
+    height: 46px;
+    position: absolute;
+    top: 46%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1ch;
+    &-title {
+      font-size: 2.4rem;
+      letter-spacing: 0.1em;
+    }
+    &-hover-text{
+      display: none;
+    }
+  }
+  &__lists {
+    margin-bottom: 40px;
+  }
+  &__list{
+    &:last-of-type{
+      .p-index-dress__img-wrapper{
+        padding-top: 0;
+      }
+      .p-index-dress__content{
+        top: 42%;
+      }
+    }
+  }
+}
+
+@include m.mq(tab) {
+  // indexページのdressセクション
+  .p-index-dress {
+    padding-top: 40px;
+    background-color: import.$color-white;
+    &__img-wrapper {
+      padding: 0;
+      margin: 0;
+    }
+    &__lists {
+      margin-bottom: 80px;
+      display: flex;
+    }
+    &__list-01 {
+      padding-top: 111px;
+      .p-index-dress__content{
+        transform: translateY(8px);
+      }
+        &:hover {
+          .p-index-dress__content{
+            top: -119px;
+            max-height: 800px;
+            height: 100%;
+            margin-top: 111px;
+            aspect-ratio: 3/4;
+            .p-index-dress__content-hover-text{
+              display: block;
+              text-align: center;
+              font-size: 2.4rem;
+            }
+          }
+      }
+    }
+    &__list-02 {
+      padding: 110px 0 0 40px;
+      .p-index-dress__content{
+        transform: translateY(42px);
+      }
+      &:hover {
+        .p-index-dress__content{
+          top: -154px;
+          max-height: 800px;
+          height: 100%;
+          margin-top: 114px;
+          .p-index-dress__content-hover-text{
+            display: block;
+            text-align: center;
+            font-size: 2.4rem;
+            letter-spacing: 0.1em;
+          }
+        }
+    }
+    }
+  }
+}

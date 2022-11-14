@@ -1,0 +1,19 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+
+// Base (Mobile First)
+
+.c-inner {
+  width: 345px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+  @include m.mq(tab) {
+    .c-inner {
+      width: 86.111vw;
+      max-width: 1240px;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }

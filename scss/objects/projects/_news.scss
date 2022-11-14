@@ -1,0 +1,99 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// indexページのnewsセクション
+.p-index-news {
+  background-color: import.$color-white;
+  width: 329px;
+  margin: 0 auto;
+  .c-section__title {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    transform: translate(2px,-10px);
+    &-English {
+      font-size: 2.4rem;
+      line-height: 44px;
+    }
+  }
+  &__list {
+    padding-top: 40px;
+    position: relative;
+  }
+  &__heading{
+    letter-spacing: 0.1em;
+    transform: translateY(-3px);
+  }
+  &__text-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    color: import.$color-accent;
+    padding: 16.5px 0 24.2px 0;
+    border-bottom: 1px solid import.$color-accent;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
+  &__date{
+    &::after {
+      content: "";
+      height: 16px;
+      border-left: 1px solid import.$color-accent;
+      margin: 0 16px 0 16px;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: inline-block;
+    vertical-align: middle;
+    color: import.$color-accent;
+    line-height: 1;
+    width: 16px;
+    height: 1px;
+    background: currentColor;
+    transform: translateY(6px);
+    &::before {
+      content: "";
+      width: 0.35em;
+      height: 0.35em;
+      border: 1px solid currentColor;
+      border-left: 0;
+      border-bottom: 0;
+      transform: rotate(45deg);
+      transform-origin: top right;
+      position: absolute;
+      top: 50%;
+      right: -0.05em;
+      box-sizing: border-box;
+    }
+  }
+  &__list-02{
+      transform: translateY(3px);
+    }
+    &__list-03{
+      transform: translateY(7px);
+    }
+}
+
+@include m.mq(tab) {
+  // indexページのnewsセクション
+  .p-index-news {
+    width: 85%;
+    transform: translateY(-5px);
+    &__text-wrapper {
+      padding: 24.5px 0 40.5px 0;
+    }
+    &__arrow {
+      transform: translateY(0px);
+      }
+      .p-index-news__list-03{
+        .p-index-news__arrow{
+          transform: translateY(-3px);
+        }
+        .p-index-news__text-wrapper{
+          padding-bottom: 37px;
+        }
+      }
+    }
+  }

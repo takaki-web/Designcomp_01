@@ -1,0 +1,22 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+.c-button {
+  display: block;
+  width: 100%;
+  height: 36px;
+  background-color: import.$color-accent;
+  color: import.$color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1ch;
+  &:hover{
+    background-color: import.$color-white;
+    color: import.$color-accent;
+    border: 1px solid import.$color-accent;
+    }
+}
+
