@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head prefix="og:http://ogp.me/ns#">
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--検索エンジンの対象外にする-->
+    <meta name="robots" content="noindex,nofollow" />
     <!-- サイトのタイトル -->
     <title>PHOTO WEDDING</title>
     <!-- サイトの説明文 -->
-    <meta name="description" content="PHOTO WEDDING" />
-    <!-- サイト制作者 -->
-    <meta name="author" content="@takakiweb" />
-    <!-- サイトのURL -->
-    <link rel="canonical" href="https://" />
-    <!-- サイトのURL -->
-    <meta property="og:url" content="https://" />
-    <!-- サイトタイトル -->
+    <meta name="description" content="技術の力で豊かな社会を創造する" />
+    <!-- ページのタイトル -->
     <meta property="og:title" content="PHOTO WEDDING" />
+    <!-- ページの説明文 -->
+    <meta property="og:description" content="技術の力で豊かな社会を創造する" />
+    <!-- ページのURL -->
+    <meta property="og:url" content="本番環境の絶対パスを入れる" />
+    <!-- サムネイル画像のURL 1200*630-->
+    <meta property="og:image" content="/img/thumbnail.png" />
+    <!-- サイトの名前 -->
+    <meta property="og:site_name" content="PHOTO WEDDING" />
     <!-- サイトの種類 -->
     <meta property="og:type" content="website" />
-    <!-- サイト説明文 -->
-    <meta property="og:description" content="PHOTO WEDDING" />
-    <!-- サイトを共有した際に表示される画像URL -->
-    <meta property="og:image" content="" />
-    <!-- Twitterで表示させたときの見え方 -->
-    <meta name="twitter:card" content="large" />
-    <!-- Twitterのユーザー名 -->
-    <meta name="twitter:site" content="@takakiweb" />
-    <meta property="og:site_name" content="PHOTO WEDDING" />
     <!-- サイトの言語情報 -->
     <meta property="og:locale" content="ja_JP" />
-    <!-- サイトのアイコン -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <!-- fontawesome -->
+    <!-- レガシーブラウザ用のfavicon.ico 32×32-->
+    <link rel="icon" href="/img/favicon.ico" sizes="any" />
+    <!-- モダンブラウザ用のSVGアイコン（ライト・ダーク） -->
+    <link rel="icon" href="/img/icon.svg" type="image/svg+xml" />
+    <!-- Appleデバイス用の180×180のPNGアイコン -->
     <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
     />
-    <!-- reset.css destyle -->
-    <link rel="stylesheet" href="css/destyle.css" />
+    <!-- Androidデバイス用の192×192と512×512のPNGアイコンを含むWebアプリマニフェスト -->
+    <link rel="manifest" href="/img/webmanifest.json" />
+    <!-- reset.css リセットstyle -->
+    <link rel="stylesheet" href="/css/destyle.css" />
     <!-- commoncss読み込み-->
-    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+        <!-- Web font読み込み-->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <!--サイト読み込み高速化-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--Webフォント読み込み-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <title>PHOTO WEDDING</title>
   </head>
   <body>
     <!-- l-header -->
@@ -132,16 +127,16 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      img/pc/beach_pc.jpg    1x,
-                      img/pc/beach_pc@2x.jpg 2x
+                      img/pc/beach_pc.webp    1x,
+                      img/pc/beach_pc@2x.webp 2x
                     "
                   />
                   <img
                     loading="lazy"
-                    src="img/sp/beach_sp.jpg"
+                    src="img/sp/beach_sp.webp"
                     srcset="
-                      img/sp/beach_sp.jpg    1x,
-                      img/sp/beach_sp@2x.jpg 2x
+                      img/sp/beach_sp.webp    1x,
+                      img/sp/beach_sp@2x.webp 2x
                     "
                     alt="beach"
                   />
@@ -170,16 +165,16 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      img/pc/chapel_pc.jpg    1x,
-                      img/pc/chapel_pc@2x.jpg 2x
+                      img/pc/chapel_pc.webp    1x,
+                      img/pc/chapel_pc@2x.webp 2x
                     "
                   />
                   <img
                     loading="lazy"
-                    src="img/sp/chapel_sp.jpg"
+                    src="img/sp/chapel_sp.webp"
                     srcset="
-                      img/sp/chapel_sp.jpg    1x,
-                      img/sp/chapel_sp@2x.jpg 2x
+                      img/sp/chapel_sp.webp    1x,
+                      img/sp/chapel_sp@2x.webp 2x
                     "
                     alt="chapel"
                   />
@@ -210,16 +205,16 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      img/pc/grasslands_pc.jpg    1x,
-                      img/pc/grasslands_pc@2x.jpg 2x
+                      img/pc/grasslands_pc.webp    1x,
+                      img/pc/grasslands_pc@2x.webp 2x
                     "
                   />
                   <img
                     loading="lazy"
-                    src="img/sp/grasslands_sp.jpg"
+                    src="img/sp/grasslands_sp.webp"
                     srcset="
-                      img/sp/grasslands_sp.jpg    1x,
-                      img/sp/grasslands_sp@2x.jpg 2x
+                      img/sp/grasslands_sp.webp    1x,
+                      img/sp/grasslands_sp@2x.webp 2x
                     "
                     alt="grasslands"
                   />
@@ -262,16 +257,16 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      img/pc/dress_pc.jpg    1x,
-                      img/pc/dress_pc@2x.jpg 2x
+                      img/pc/dress_pc.webp    1x,
+                      img/pc/dress_pc@2x.webp 2x
                     "
                   />
                   <img
                     loading="lazy"
-                    src="img/sp/dress_sp.jpg"
+                    src="img/sp/dress_sp.webp"
                     srcset="
-                      img/sp/dress_sp.jpg    1x,
-                      img/sp/dress_sp@2x.jpg 2x
+                      img/sp/dress_sp.webp    1x,
+                      img/sp/dress_sp@2x.webp 2x
                     "
                     alt="dress"
                   />
@@ -298,16 +293,16 @@
                   <source
                     media="(min-width:768px)"
                     srcset="
-                      img/pc/tuxedo_pc.jpg    1x,
-                      img/pc/tuxedo_pc@2x.jpg 2x
+                      img/pc/tuxedo_pc.webp    1x,
+                      img/pc/tuxedo_pc@2x.webp 2x
                     "
                   />
                   <img
                     loading="lazy"
-                    src="img/sp/tuxedo_sp.jpg"
+                    src="img/sp/tuxedo_sp.webp"
                     srcset="
-                      img/sp/tuxedo_sp.jpg    1x,
-                      img/sp/tuxedo_sp@2x.jpg 2x
+                      img/sp/tuxedo_sp.webp    1x,
+                      img/sp/tuxedo_sp@2x.webp 2x
                     "
                     alt="tuxedo"
                   />
@@ -347,10 +342,10 @@
                 <picture>
                   <img
                     loading="lazy"
-                    src="img/component/contact.png"
+                    src="img/component/contact.webp"
                     srcset="
-                      img/component/contact.png    1x,
-                      img/component/contact@2x.png 2x
+                      img/component/contact.webp    1x,
+                      img/component/contact@2x.webp 2x
                     "
                     alt="contact"
                   />
@@ -376,10 +371,10 @@
                 <picture>
                   <img
                     loading="lazy"
-                    src="img/component/inspection.png"
+                    src="img/component/inspection.webp"
                     srcset="
-                      img/component/inspection.png    1x,
-                      img/component/inspection@2x.png 2x
+                      img/component/inspection.webp    1x,
+                      img/component/inspection@2x.webp 2x
                     "
                     alt="inspection"
                   />
@@ -405,10 +400,10 @@
                 <picture>
                   <img
                     loading="lazy"
-                    src="img/component/reserve.png"
+                    src="img/component/reserve.webp"
                     srcset="
-                      img/component/reserve.png    1x,
-                      img/component/reserve@2x.png 2x
+                      img/component/reserve.webp    1x,
+                      img/component/reserve@2x.webp 2x
                     "
                     alt="reserve"
                   />
@@ -506,16 +501,16 @@
               <source
                 media="(min-width:768px)"
                 srcset="
-                  img/pc/contact_pc.jpg    1x,
-                  img/pc/contact_pc@2x.jpg 2x
+                  img/pc/contact_pc.webp    1x,
+                  img/pc/contact_pc@2x.webp 2x
                 "
               />
               <img
                 loading="lazy"
-                src="img/sp/contact_sp.jpg"
+                src="img/sp/contact_sp.webp"
                 srcset="
-                  img/sp/contact_sp.jpg    1x,
-                  img/sp/contact_sp@2x.jpg 2x
+                  img/sp/contact_sp.webp    1x,
+                  img/sp/contact_sp@2x.webp 2x
                 "
                 alt="contact"
               />
