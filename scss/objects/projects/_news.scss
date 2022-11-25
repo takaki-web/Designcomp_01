@@ -33,13 +33,11 @@
     font-size: 1.2rem;
     letter-spacing: 0.1em;
   }
-  &__date{
-    &::after {
-      content: "";
-      height: 16px;
-      border-left: 1px solid import.$color-accent;
-      margin: 0 16px 0 16px;
-    }
+  &__date span{
+    height: 16px;
+    border-left: 1px solid #BD8E62;
+    margin-left: 16px;
+    padding-right: 16px;
   }
   &__arrow {
     position: absolute;
