@@ -6,10 +6,13 @@
 .p-index-contact {
   padding-top: 87px;
   background-color: import.$color-white;
-  &__img-wrapper {
+  &__content-wrapper {
     margin: 0 calc(50% - 50vw);
     img {
       width: 100%;
+      max-width: 100%;
+      aspect-ratio: auto 375/513;
+      height: auto;
     }
     position: relative;
     &::after{
@@ -63,10 +66,11 @@
   .p-index-contact {
     padding-top: 154px;
     background-color: import.$color-white;
-    &__img-wrapper {
+    &__content-wrapper {
       margin: 0 calc(50% - 50vw);
       img {
         width: 100%;
+        aspect-ratio: auto 1440/640;
       }
       position: relative;
       &::after{

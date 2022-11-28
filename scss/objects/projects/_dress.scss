@@ -5,12 +5,13 @@
 // indexページのdressセクション
 .p-index-dress {
   background-color: import.$color-white;
-  &__img-wrapper {
-    margin: 0 calc(50% - 50vw);
+  &__content-wrapper {
+    margin-top: 40px;
     img {
-      width: 100%;
+      max-width: 100%;
+      aspect-ratio: auto 375/500;
+      height: auto;
     }
-    padding: 40px 0 40px 0;
     position: relative;
   }
   &__content {
@@ -34,7 +35,11 @@
     }
   }
   &__lists {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template: 1fr 1fr;
+    gap: 40px;
+    padding-top: 40px;
   }
   &__list{
     &:last-of-type{
@@ -53,16 +58,17 @@
   .p-index-dress {
     padding-top: 40px;
     background-color: import.$color-white;
-    &__img-wrapper {
-      padding: 0;
-      margin: 0;
+    &__content-wrapper {
+      img{
+        aspect-ratio: auto 600/800;
+      }
     }
     &__lists {
-      margin-bottom: 80px;
+      margin-bottom: 160px;
       display: flex;
+      padding-top: 120px;
     }
     &__list-01 {
-      padding-top: 111px;
       .p-index-dress__content{
         transform: translateY(8px);
       }
@@ -82,7 +88,6 @@
       }
     }
     &__list-02 {
-      padding: 110px 0 0 40px;
       .p-index-dress__content{
         transform: translateY(42px);
       }

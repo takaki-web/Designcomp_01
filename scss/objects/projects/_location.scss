@@ -19,9 +19,10 @@
     padding-bottom: 40px;
   }
   &__img-wrapper {
-    margin: 0 calc(50% - 50vw);
     img {
-      width: 100%;
+      max-width: 100%;
+      aspect-ratio: auto 375/440;
+      height: auto;
     }
     padding-bottom: 40px;
   }
@@ -124,7 +125,7 @@
         top: 192px;
       }
       img {
-        width: 100%;
+        aspect-ratio: auto 800/450;
       }
       padding: 112px 0 40px 0;
     }

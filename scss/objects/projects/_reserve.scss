@@ -6,7 +6,7 @@
 .p-index-reserve {
   padding-bottom: 80px;
   background-color: import.$color-reserve;
-  &__img-wrapper {
+  &__content-wrapper {
     background-color: import.$color-white;
     border: 1px dashed import.$color-accent;
     border-radius: 50%;
@@ -52,9 +52,20 @@
       margin-bottom: 40px;
     }
   }
+  &__list-01 {
+    img {
+      max-width: 100%;
+      aspect-ratio: auto 221/146;
+      height: auto;
+    }
+  }
+
   &__list-02 {
     img {
       padding-top: 80px;
+      max-width: 100%;
+      aspect-ratio: auto 241/147;
+      height: auto;
     }
     .p-index-reserve__heading-number {
       transform: translate(-57px, -13px);
@@ -68,6 +79,9 @@
   &__list-03 {
     img {
       padding-top: 80px;
+      max-width: 100%;
+      aspect-ratio: auto 201/160;
+      height: auto;
     }
     .p-index-reserve__heading-number {
       transform: translate(-57px, -13px);
@@ -88,7 +102,7 @@
   // indexページのreserveセクション
   .p-index-reserve {
     padding-bottom: 120px;
-    &__img-wrapper {
+    &__content-wrapper {
       max-height: 320px;
       max-width: 320px;
       height: 22.222vw;
@@ -101,7 +115,7 @@
       }
     }
     &__list-01 {
-      .p-index-reserve__img-wrapper {
+      .p-index-reserve__content-wrapper {
         margin-left: 0;
       }
     }
@@ -132,7 +146,7 @@
   }
   @include m.mq(pc-tab) {
     .p-index-reserve {
-      &__img-wrapper {
+      &__content-wrapper {
         img {
           padding: 0;
           display: flex;
