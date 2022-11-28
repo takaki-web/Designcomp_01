@@ -28,8 +28,8 @@ elem1.addEventListener("click", function () { //要素がクリックされた�
 
 // ハンバーガーメニュー---------------------------------------------------
 const ham = document.querySelector(".js-l-header__burger-btn"); //単一の要素を取得
-const menu = document.querySelector(".js-l-header__burger-menu"); //単一の要素を取得
-const body = document.querySelector("body"); //単一の要素を取得
+const menu = document.querySelector(".js-l-header__burger-menu");
+const body = document.querySelector("body");
 /*---スマホのときはtouchstart---*/
 let flag2 = false;
 ham.addEventListener("touchstart", function () { //要素が押されたら
@@ -48,13 +48,13 @@ ham.addEventListener("click", function () { //要素がクリックされたら
   if (flag2) {
     flag2 = false;
   } else {
-  ham.classList.toggle("active"); //toggle 切り替え
+  ham.classList.toggle("active");
     if (ham.classList.contains("active")) {
-      menu.classList.add("active"); //追加
-      body.classList.add("fixed"); //追加
+      menu.classList.add("active");
+      body.classList.add("fixed");
       } else {
-        menu.classList.remove("active"); //削除
-        body.classList.remove("fixed"); //削除
+        menu.classList.remove("active");
+        body.classList.remove("fixed");
   }
 }});
 
