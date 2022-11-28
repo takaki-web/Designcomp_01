@@ -134,16 +134,16 @@ table {
   -webkit-overflow-scrolling: touch;
   font-size: 2.2rem;
 }
-.l-header__burger-menu ul {
+.l-header__burger-lists {
   margin: 0 auto;
   padding: 0;
-  width: 100%;
 }
 .l-header__burger-menu-link {
   list-style-type: none;
   padding: 0;
-  width: 100%;
   transition: 0.4s all;
+  width: fit-content;
+  margin: 0 auto;
 }
 .l-header__burger-menu-link:last-child {
   padding-bottom: 0;
