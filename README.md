@@ -28,4 +28,4 @@ jQueryが重いので全てvanillaJSに書き換え。
 
 下記のチェックリストを元にチェックしました。
 
-https://puffy-trout-b0f.notion.site/e693b98ef94b474fabf635558a31147f?v=33836d24d0054fe89c8a598add46f04d
+https://puffy-trout-b0f.notion.site/e693b98ef94b474fabf635558a31147f?v=33836d24d0054fe89c8a598add46f04d　
